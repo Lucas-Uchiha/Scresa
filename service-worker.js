@@ -2,9 +2,9 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open('cache-v1').then(function(cache) {
             return cache.addAll([
-            '/index.html',
-            '/icon-192x192.png',
-            '/icon-512x512.png'
+            './index.html',
+            './icon-192x192.png',
+            './icon-512x512.png'
             ]);
         })
     );
